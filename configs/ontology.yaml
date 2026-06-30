@@ -1,0 +1,371 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Skill Ontology — Hand-curated taxonomy of technical skills
+# ──────────────────────────────────────────────────────────────────────────────
+# Structure:
+#   category:
+#     canonical_name:
+#       aliases: [list of alternative names]
+#       parents: [list of parent categories]
+#
+# The parser and graph services load this file to:
+#   1. Normalise raw skill strings → canonical names
+#   2. Build a knowledge graph with is-a / part-of edges
+#   3. Enable semantic reasoning beyond exact keyword matches
+#
+# To add a new technology (e.g. Qdrant, pgvector), simply add an entry
+# under the appropriate category. No code changes required.
+# ──────────────────────────────────────────────────────────────────────────────
+
+categories:
+  programming_languages:
+    Python:
+      aliases: ["python3", "python 3", "py"]
+      parents: ["programming"]
+    Java:
+      aliases: ["java8", "java11", "java17"]
+      parents: ["programming"]
+    Scala:
+      aliases: []
+      parents: ["programming", "jvm"]
+    Go:
+      aliases: ["golang"]
+      parents: ["programming"]
+    Rust:
+      aliases: []
+      parents: ["programming"]
+    C++:
+      aliases: ["cpp", "c plus plus"]
+      parents: ["programming"]
+    JavaScript:
+      aliases: ["js", "node.js", "nodejs"]
+      parents: ["programming"]
+    TypeScript:
+      aliases: ["ts"]
+      parents: ["programming"]
+    SQL:
+      aliases: ["structured query language"]
+      parents: ["programming", "databases"]
+
+  vector_databases:
+    FAISS:
+      aliases: ["facebook ai similarity search"]
+      parents: ["vector_database", "ann_search", "retrieval", "embeddings"]
+    Milvus:
+      aliases: []
+      parents: ["vector_database", "ann_search", "retrieval", "embeddings"]
+    Pinecone:
+      aliases: []
+      parents: ["vector_database", "ann_search", "retrieval"]
+    Weaviate:
+      aliases: []
+      parents: ["vector_database", "ann_search", "retrieval"]
+    Qdrant:
+      aliases: []
+      parents: ["vector_database", "ann_search", "retrieval"]
+    pgvector:
+      aliases: ["pg_vector"]
+      parents: ["vector_database", "databases", "retrieval"]
+    ChromaDB:
+      aliases: ["chroma"]
+      parents: ["vector_database", "retrieval"]
+
+  embeddings_and_retrieval:
+    BGE:
+      aliases: ["bge-base", "bge-large", "BAAI/bge", "bge-base-en-v1.5"]
+      parents: ["embeddings", "sentence_transformers", "retrieval"]
+    Sentence Transformers:
+      aliases: ["sentence-transformers", "sbert"]
+      parents: ["embeddings", "transformers", "nlp"]
+    Embeddings:
+      aliases: ["text embeddings", "dense embeddings", "vector embeddings"]
+      parents: ["representation_learning", "nlp"]
+    Retrieval:
+      aliases: ["information retrieval", "IR", "search"]
+      parents: ["nlp", "information_systems"]
+    Ranking:
+      aliases: ["re-ranking", "reranking", "candidate ranking", "learning to rank"]
+      parents: ["retrieval", "ml"]
+    BM25:
+      aliases: ["bm-25", "okapi bm25"]
+      parents: ["retrieval", "sparse_retrieval"]
+    TF-IDF:
+      aliases: ["tfidf", "tf_idf"]
+      parents: ["retrieval", "sparse_retrieval", "nlp"]
+    ColBERT:
+      aliases: ["colbert"]
+      parents: ["retrieval", "dense_retrieval", "transformers"]
+
+  llm_and_finetuning:
+    LLM:
+      aliases: ["large language model", "large language models"]
+      parents: ["transformers", "nlp", "deep_learning"]
+    LoRA:
+      aliases: ["lora", "low-rank adaptation"]
+      parents: ["fine_tuning", "llm", "transformers"]
+    QLoRA:
+      aliases: ["qlora"]
+      parents: ["fine_tuning", "llm", "quantization"]
+    PEFT:
+      aliases: ["parameter efficient fine tuning"]
+      parents: ["fine_tuning", "llm"]
+    Fine Tuning:
+      aliases: ["fine-tuning", "finetuning", "model tuning"]
+      parents: ["llm", "transfer_learning"]
+    Prompt Engineering:
+      aliases: ["prompt design", "prompt tuning"]
+      parents: ["llm", "nlp"]
+    RAG:
+      aliases: ["retrieval augmented generation"]
+      parents: ["llm", "retrieval", "generation"]
+    LangChain:
+      aliases: ["langchain"]
+      parents: ["llm", "framework"]
+
+  ml_frameworks:
+    PyTorch:
+      aliases: ["torch"]
+      parents: ["deep_learning", "ml_framework"]
+    TensorFlow:
+      aliases: ["tf", "tensorflow2"]
+      parents: ["deep_learning", "ml_framework"]
+    Transformers:
+      aliases: ["huggingface transformers", "hf transformers"]
+      parents: ["deep_learning", "nlp"]
+    scikit-learn:
+      aliases: ["sklearn", "scikit learn"]
+      parents: ["ml_framework", "ml"]
+    XGBoost:
+      aliases: ["xgboost"]
+      parents: ["gradient_boosting", "ml"]
+    LightGBM:
+      aliases: ["lightgbm", "lgbm"]
+      parents: ["gradient_boosting", "ml"]
+    Hugging Face:
+      aliases: ["huggingface", "hf"]
+      parents: ["ml_platform", "nlp"]
+
+  ml_concepts:
+    Machine Learning:
+      aliases: ["ML"]
+      parents: ["ai"]
+    Deep Learning:
+      aliases: ["DL", "neural networks"]
+      parents: ["ml"]
+    NLP:
+      aliases: ["natural language processing", "text processing"]
+      parents: ["ml", "ai"]
+    Computer Vision:
+      aliases: ["CV", "vision"]
+      parents: ["ml", "ai"]
+    Recommendation Systems:
+      aliases: ["recommender systems", "recsys"]
+      parents: ["ml", "information_systems"]
+    Learning to Rank:
+      aliases: ["LTR", "l2r", "learning-to-rank"]
+      parents: ["ml", "ranking", "retrieval"]
+
+  evaluation:
+    Evaluation Metrics:
+      aliases: ["metrics", "model evaluation"]
+      parents: ["ml", "evaluation"]
+    NDCG:
+      aliases: ["ndcg", "normalized discounted cumulative gain"]
+      parents: ["evaluation", "ranking"]
+    MAP:
+      aliases: ["mean average precision"]
+      parents: ["evaluation", "ranking"]
+    MRR:
+      aliases: ["mean reciprocal rank"]
+      parents: ["evaluation", "ranking"]
+    Precision:
+      aliases: ["precision@k"]
+      parents: ["evaluation"]
+    Recall:
+      aliases: ["recall@k"]
+      parents: ["evaluation"]
+    F1 Score:
+      aliases: ["f1", "f-score", "f-measure"]
+      parents: ["evaluation"]
+    AUC:
+      aliases: ["auc-roc", "area under curve"]
+      parents: ["evaluation"]
+
+  production_ml:
+    Production ML:
+      aliases: ["mlops", "ml engineering", "production machine learning"]
+      parents: ["ml", "engineering"]
+    Docker:
+      aliases: ["containerization", "containers"]
+      parents: ["devops", "infrastructure"]
+    Kubernetes:
+      aliases: ["k8s"]
+      parents: ["devops", "infrastructure", "orchestration"]
+    MLflow:
+      aliases: ["ml flow"]
+      parents: ["mlops", "experiment_tracking"]
+    Model Serving:
+      aliases: ["model deployment", "inference serving"]
+      parents: ["production_ml", "infrastructure"]
+    Feature Store:
+      aliases: ["feature engineering"]
+      parents: ["production_ml", "data_engineering"]
+    CI/CD:
+      aliases: ["continuous integration", "continuous delivery"]
+      parents: ["devops", "engineering"]
+
+  data_engineering:
+    Spark:
+      aliases: ["apache spark", "pyspark"]
+      parents: ["data_engineering", "distributed_systems"]
+    Kafka:
+      aliases: ["apache kafka"]
+      parents: ["data_engineering", "streaming"]
+    Airflow:
+      aliases: ["apache airflow"]
+      parents: ["data_engineering", "orchestration"]
+    ETL:
+      aliases: ["data pipeline", "data pipelines"]
+      parents: ["data_engineering"]
+
+  databases:
+    PostgreSQL:
+      aliases: ["postgres"]
+      parents: ["databases", "sql"]
+    MongoDB:
+      aliases: ["mongo"]
+      parents: ["databases", "nosql"]
+    Redis:
+      aliases: []
+      parents: ["databases", "cache", "nosql"]
+    Elasticsearch:
+      aliases: ["elastic", "ES"]
+      parents: ["databases", "search", "retrieval"]
+
+  cloud_and_infra:
+    AWS:
+      aliases: ["amazon web services"]
+      parents: ["cloud"]
+    GCP:
+      aliases: ["google cloud", "google cloud platform"]
+      parents: ["cloud"]
+    Azure:
+      aliases: ["microsoft azure"]
+      parents: ["cloud"]
+
+  soft_skills:
+    Open Source:
+      aliases: ["oss", "open-source", "open source contributions"]
+      parents: ["engineering_culture"]
+    Distributed Systems:
+      aliases: ["distributed computing"]
+      parents: ["systems_engineering"]
+    Marketplace:
+      aliases: ["marketplace systems", "two-sided marketplace"]
+      parents: ["product", "business"]
+    HR Tech:
+      aliases: ["hr technology", "human resources tech", "talent tech"]
+      parents: ["product", "business"]
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Protected terms — these are case-sensitive and must not be lowercased
+# during text cleaning.
+# ──────────────────────────────────────────────────────────────────────────────
+protected_terms:
+  - Python
+  - FAISS
+  - LoRA
+  - QLoRA
+  - BGE
+  - PEFT
+  - RAG
+  - LLM
+  - NLP
+  - NDCG
+  - MAP
+  - MRR
+  - AUC
+  - BM25
+  - TF-IDF
+  - ColBERT
+  - XGBoost
+  - LightGBM
+  - PyTorch
+  - TensorFlow
+  - LangChain
+  - MLflow
+  - CI/CD
+  - ETL
+  - AWS
+  - GCP
+  - SQL
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Technology Relationships — edges for the knowledge graph
+# ──────────────────────────────────────────────────────────────────────────────
+# Relation types: uses, depends_on, extends, alternative_to, related_to
+# ──────────────────────────────────────────────────────────────────────────────
+technology_relationships:
+  FastAPI:
+    uses: ["Python", "Pydantic"]
+    alternative_to: ["Flask", "Django"]
+  Flask:
+    uses: ["Python"]
+    alternative_to: ["FastAPI", "Django"]
+  LangChain:
+    uses: ["Python", "LLM"]
+    depends_on: ["Embeddings", "Retrieval"]
+  RAG:
+    depends_on: ["LLM", "Retrieval", "Embeddings"]
+    related_to: ["LangChain", "Vector Search"]
+  LoRA:
+    extends: ["Fine Tuning"]
+    depends_on: ["LLM", "PyTorch"]
+  QLoRA:
+    extends: ["LoRA"]
+    depends_on: ["LLM", "Quantization"]
+  FAISS:
+    alternative_to: ["Milvus", "Pinecone", "Qdrant", "Weaviate"]
+    depends_on: ["Embeddings"]
+  Milvus:
+    alternative_to: ["FAISS", "Pinecone", "Qdrant", "Weaviate"]
+    depends_on: ["Embeddings"]
+  Pinecone:
+    alternative_to: ["FAISS", "Milvus", "Qdrant", "Weaviate"]
+    depends_on: ["Embeddings"]
+  PyTorch:
+    alternative_to: ["TensorFlow"]
+    uses: ["Python"]
+  TensorFlow:
+    alternative_to: ["PyTorch"]
+    uses: ["Python"]
+  Spark:
+    uses: ["Python", "Scala", "Java"]
+    related_to: ["Kafka", "Airflow"]
+  Kafka:
+    related_to: ["Spark", "Airflow"]
+  Docker:
+    related_to: ["Kubernetes"]
+  Kubernetes:
+    depends_on: ["Docker"]
+  Sentence Transformers:
+    depends_on: ["PyTorch", "Transformers"]
+    uses: ["Embeddings"]
+  ColBERT:
+    depends_on: ["Transformers"]
+    related_to: ["Retrieval", "Dense Retrieval"]
+  BGE:
+    depends_on: ["Sentence Transformers"]
+    related_to: ["Embeddings"]
+  scikit-learn:
+    uses: ["Python"]
+    alternative_to: ["XGBoost", "LightGBM"]
+  XGBoost:
+    alternative_to: ["LightGBM", "scikit-learn"]
+  LightGBM:
+    alternative_to: ["XGBoost", "scikit-learn"]
+  Elasticsearch:
+    related_to: ["BM25", "Retrieval"]
+  MLflow:
+    uses: ["Python"]
+    related_to: ["Production ML"]
+

@@ -1,0 +1,11 @@
+categories:
+  programming_languages:
+    Python:
+      aliases: ["python3"]
+      parents: ["programming"]
+  vector_databases:
+    FAISS:
+      aliases: []
+      parents: ["vector_database", "retrieval"]
+
+protected_terms: []

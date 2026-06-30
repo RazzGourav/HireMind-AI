@@ -1,0 +1,3 @@
+{"candidate_id": "CAND_001", "profile": {"country": "India", "total_experience_months": 60}, "skills": [{"name": "Python"}], "signals": {"github_activity_score": 0.8, "has_github": true}}
+{"candidate_id": "CAND_001"}
+{"candidate_id": "CAND_BAD", "profile": {"total_experience_months": -4}}

@@ -1,0 +1,16 @@
+categories:
+  vector_databases:
+    FAISS:
+      aliases: ["facebook ai similarity search"]
+      parents: ["vector_database", "retrieval"]
+    Milvus:
+      aliases: []
+      parents: ["vector_database", "retrieval"]
+  programming_languages:
+    Python:
+      aliases: ["python3", "py"]
+      parents: ["programming"]
+
+protected_terms:
+  - FAISS
+  - Python

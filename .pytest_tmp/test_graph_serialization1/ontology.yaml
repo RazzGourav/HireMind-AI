@@ -1,0 +1,17 @@
+categories:
+  vector_databases:
+    FAISS:
+      aliases: []
+      parents: ["vector_database", "retrieval"]
+    Milvus:
+      aliases: []
+      parents: ["vector_database", "retrieval"]
+  embeddings_and_retrieval:
+    Retrieval:
+      aliases: []
+      parents: ["nlp"]
+    Embeddings:
+      aliases: []
+      parents: ["nlp"]
+
+protected_terms: []

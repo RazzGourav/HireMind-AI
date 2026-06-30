@@ -1,0 +1,17 @@
+
+categories:
+  programming_languages:
+    Python:
+      aliases: ["python3", "py"]
+      parents: ["programming"]
+    Go:
+      aliases: ["golang"]
+      parents: ["programming"]
+  databases:
+    SQL:
+      aliases: []
+      parents: ["databases"]
+
+protected_terms:
+  - Python
+  - Go

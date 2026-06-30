@@ -1,0 +1,48 @@
+{
+  "required": [
+    {
+      "id": "REQ_001",
+      "name": "Python",
+      "category": "required",
+      "weight": 1.0,
+      "required": true,
+      "aliases": [
+        "python3"
+      ],
+      "evidence": "Must have Python"
+    },
+    {
+      "id": "REQ_002",
+      "name": "Retrieval",
+      "category": "required",
+      "weight": 1.0,
+      "required": true,
+      "aliases": [],
+      "evidence": ""
+    }
+  ],
+  "preferred": [
+    {
+      "id": "REQ_003",
+      "name": "LoRA",
+      "category": "preferred",
+      "weight": 0.5,
+      "required": false,
+      "aliases": [],
+      "evidence": ""
+    }
+  ],
+  "negative": [
+    {
+      "id": "NEG_001",
+      "name": "Research Only",
+      "reason": "Not looking for pure research",
+      "evidence": ""
+    }
+  ],
+  "experience": {
+    "min_years": 5,
+    "max_years": 9,
+    "preferred_years": 5
+  }
+}

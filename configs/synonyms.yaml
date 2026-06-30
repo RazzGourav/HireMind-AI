@@ -1,0 +1,60 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Synonym Groups — bidirectional synonym resolution for recall improvement
+# ──────────────────────────────────────────────────────────────────────────────
+# Each group is a list of equivalent terms. The FIRST term in each group
+# is treated as the canonical form. All terms in a group map to each other.
+#
+# To add a new synonym, add it to an existing group or create a new one.
+# No code changes required.
+# ──────────────────────────────────────────────────────────────────────────────
+
+synonym_groups:
+  # Embeddings & Retrieval
+  - ["Sentence Transformers", "SBERT", "sentence-transformers"]
+  - ["Vector Search", "ANN Search", "Approximate Nearest Neighbor", "similarity search"]
+  - ["Semantic Retrieval", "Dense Retrieval", "neural retrieval"]
+  - ["Sparse Retrieval", "Lexical Retrieval", "keyword search"]
+  - ["Hybrid Retrieval", "hybrid search"]
+  - ["LLM", "Large Language Model", "large language models"]
+  - ["RAG", "Retrieval Augmented Generation"]
+  - ["Fine Tuning", "fine-tuning", "finetuning", "model tuning"]
+
+  # Infrastructure
+  - ["Docker", "Containerization", "containers"]
+  - ["Kubernetes", "K8s", "container orchestration"]
+  - ["CI/CD", "Continuous Integration", "continuous delivery", "CI CD"]
+  - ["MLOps", "ML Engineering", "production machine learning"]
+  - ["ETL", "data pipeline", "data pipelines"]
+
+  # Frameworks
+  - ["scikit-learn", "sklearn", "scikit learn"]
+  - ["Hugging Face", "HuggingFace", "HF"]
+  - ["TensorFlow", "tf", "tensorflow2"]
+  - ["PyTorch", "torch"]
+  - ["FastAPI", "fast api"]
+  - ["Flask", "flask framework"]
+  - ["Django", "django framework"]
+  - ["LangChain", "langchain"]
+
+  # Databases
+  - ["PostgreSQL", "Postgres", "psql"]
+  - ["MongoDB", "Mongo", "mongodb"]
+  - ["Elasticsearch", "Elastic", "elastic search"]
+  - ["Redis", "redis cache"]
+
+  # Cloud
+  - ["AWS", "Amazon Web Services"]
+  - ["GCP", "Google Cloud", "Google Cloud Platform"]
+  - ["Azure", "Microsoft Azure"]
+
+  # Concepts
+  - ["NLP", "Natural Language Processing", "text processing"]
+  - ["Computer Vision", "CV", "vision", "image recognition"]
+  - ["Deep Learning", "DL", "neural networks"]
+  - ["Machine Learning", "ML"]
+  - ["Recommendation Systems", "Recommender Systems", "RecSys"]
+  - ["Distributed Systems", "distributed computing"]
+  - ["Microservices", "micro-services", "microservice architecture"]
+  - ["REST API", "RESTful API", "REST"]
+  - ["GraphQL", "graph ql"]
+  - ["Feature Engineering", "feature extraction"]

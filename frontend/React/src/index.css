@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-text font-sans antialiased;
+    /* Custom scrollbar for Dark OS feel */
+  }
+  
+  /* Webkit Scrollbar styles */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-surface-light rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-text-muted;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-xl shadow transition-colors;
+  }
+  
+  .card {
+    @apply bg-surface/60 backdrop-blur-md rounded-3xl border border-white/5 shadow-xl p-6;
+  }
+  
+  .glass-panel {
+    @apply bg-surface/40 backdrop-blur-lg border border-white/10 rounded-2xl;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium border border-white/10;
+  }
+}

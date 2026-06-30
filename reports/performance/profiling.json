@@ -1,0 +1,10 @@
+{
+    "timestamp": 1782808996.354612,
+    "environment": "development",
+    "startup_time_ms": 24453.405380249023,
+    "retrieval_latency_ms": 15687.33549118042,
+    "ranking_latency_ms": 585.4337215423584,
+    "memory_usage_peak_mb": 1978.37472,
+    "cpu_utilization_percent": 35.9,
+    "api_throughput_rps_estimate": 0.06145235558420845
+}

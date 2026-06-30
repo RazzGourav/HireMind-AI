@@ -1,0 +1,11 @@
+categories:
+  programming_languages:
+    Python:
+      aliases: ["python3"]
+      parents: ["programming"]
+  embeddings_and_retrieval:
+    Embeddings:
+      aliases: ["text embeddings"]
+      parents: ["nlp"]
+
+protected_terms: []

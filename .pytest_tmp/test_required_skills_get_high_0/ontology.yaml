@@ -1,0 +1,20 @@
+categories:
+  programming_languages:
+    Python:
+      aliases: ["python3"]
+      parents: ["programming"]
+  embeddings_and_retrieval:
+    Retrieval:
+      aliases: ["information retrieval"]
+      parents: ["nlp"]
+    Embeddings:
+      aliases: ["text embeddings"]
+      parents: ["nlp"]
+  llm_and_finetuning:
+    LoRA:
+      aliases: ["lora"]
+      parents: ["fine_tuning", "llm"]
+
+protected_terms:
+  - Python
+  - LoRA

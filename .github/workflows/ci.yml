@@ -1,0 +1,48 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          
+      - name: Install uv
+        run: pip install uv
+        
+      - name: Install dependencies
+        run: uv sync --all-groups
+        
+      - name: Lint with Ruff
+        run: uv run ruff check .
+        
+      - name: Format Check with Black
+        run: uv run black --check .
+        
+      - name: Type Check with MyPy
+        run: uv run mypy --explicit-package-bases src scripts
+        
+      - name: Run Pytest
+        run: uv run pytest
+
+  docker-build:
+    needs: lint-and-test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Build Backend Image
+        run: docker build -t hiremind-backend -f Dockerfile.backend .
+        
+      - name: Build Frontend Image
+        run: docker build -t hiremind-frontend -f Dockerfile.frontend .

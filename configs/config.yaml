@@ -1,0 +1,29 @@
+project:
+  name: HireMind AI
+  version: 1.0
+
+dataset:
+  version: "1.0"
+  raw_path: Dataset/candidates.jsonl
+  schema_path: configs/candidate_schema.json
+  output_dir: outputs
+  cache_dir: feature_cache
+
+jd:
+  path: Dataset/job_description.docx
+  ontology_path: configs/ontology.yaml
+  artifacts_dir: artifacts
+
+ranking:
+  top_k: 100
+
+embedding:
+  model: BAAI/bge-base-en-v1.5
+  batch_size: 256
+
+behavior:
+  weight: 0.15
+
+technical:
+  weight: 0.40
+

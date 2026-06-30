@@ -1,0 +1,17 @@
+{
+  "required": {
+    "Python": 1.0,
+    "Retrieval": 1.0
+  },
+  "preferred": {
+    "LoRA": 0.5
+  },
+  "negative": [
+    "Research Only"
+  ],
+  "experience": {
+    "min_years": 5,
+    "max_years": 9,
+    "preferred_years": 5
+  }
+}

@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: hiremind-api
+    env: docker
+    dockerfilePath: Dockerfile.backend
+    region: ohio
+    plan: starter
+    healthCheckPath: /health
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: PORT
+        value: 8000
+    autoDeploy: false
+
+  - type: web
+    name: hiremind-frontend
+    env: docker
+    dockerfilePath: Dockerfile.frontend
+    region: ohio
+    plan: starter
+    healthCheckPath: /
+    autoDeploy: false

@@ -1,0 +1,147 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Domain Knowledge Graph — business domain → skill mappings
+# ──────────────────────────────────────────────────────────────────────────────
+# Each domain lists:
+#   - skills: technologies/concepts commonly used in this domain
+#   - subdomains: specialised areas within the domain
+#
+# Used by the inference engine to detect candidate domain expertise
+# and compute domain breadth/depth features.
+# ──────────────────────────────────────────────────────────────────────────────
+
+domains:
+  healthcare:
+    label: "Healthcare & Life Sciences"
+    skills:
+      - "Clinical NLP"
+      - "Medical Imaging"
+      - "HIPAA"
+      - "HL7"
+      - "FHIR"
+      - "Drug Discovery"
+      - "Biostatistics"
+    subdomains:
+      - "Medical AI"
+      - "Clinical NLP"
+      - "Health Informatics"
+
+  finance:
+    label: "Financial Services"
+    skills:
+      - "Fraud Detection"
+      - "AML"
+      - "Risk Analytics"
+      - "Algorithmic Trading"
+      - "Credit Scoring"
+      - "Portfolio Optimization"
+    subdomains:
+      - "FinTech"
+      - "InsurTech"
+      - "RegTech"
+
+  recruitment:
+    label: "HR Tech & Recruitment"
+    skills:
+      - "Resume Parsing"
+      - "Candidate Ranking"
+      - "HR Tech"
+      - "Talent Matching"
+      - "Job Matching"
+      - "ATS"
+    subdomains:
+      - "Talent Acquisition"
+      - "People Analytics"
+
+  ecommerce:
+    label: "E-Commerce & Retail"
+    skills:
+      - "Recommendation Systems"
+      - "Search Ranking"
+      - "Price Optimization"
+      - "Supply Chain"
+      - "Inventory Management"
+      - "Personalization"
+    subdomains:
+      - "MarTech"
+      - "AdTech"
+
+  autonomous:
+    label: "Autonomous Systems & Robotics"
+    skills:
+      - "Computer Vision"
+      - "SLAM"
+      - "Sensor Fusion"
+      - "Reinforcement Learning"
+      - "Path Planning"
+      - "ROS"
+    subdomains:
+      - "Self-Driving"
+      - "Drone Tech"
+      - "Industrial Robotics"
+
+  media:
+    label: "Media & Content"
+    skills:
+      - "Content Recommendation"
+      - "Video Processing"
+      - "Speech Recognition"
+      - "TTS"
+      - "Image Generation"
+      - "Content Moderation"
+    subdomains:
+      - "Streaming"
+      - "Social Media"
+      - "Gaming"
+
+  cybersecurity:
+    label: "Cybersecurity"
+    skills:
+      - "Threat Detection"
+      - "Anomaly Detection"
+      - "Malware Analysis"
+      - "Network Security"
+      - "SIEM"
+      - "Penetration Testing"
+    subdomains:
+      - "AppSec"
+      - "Cloud Security"
+
+  edtech:
+    label: "Education Technology"
+    skills:
+      - "Adaptive Learning"
+      - "Learning Analytics"
+      - "EdTech"
+      - "Question Generation"
+      - "Automated Grading"
+    subdomains:
+      - "Online Learning"
+      - "Assessment Tech"
+
+  saas:
+    label: "SaaS & Cloud Platforms"
+    skills:
+      - "Multi-tenancy"
+      - "API Design"
+      - "Microservices"
+      - "Distributed Systems"
+      - "Rate Limiting"
+      - "Observability"
+    subdomains:
+      - "Developer Tools"
+      - "Infrastructure"
+      - "PaaS"
+
+  data_platforms:
+    label: "Data Platforms & Analytics"
+    skills:
+      - "Data Engineering"
+      - "Data Warehousing"
+      - "Business Intelligence"
+      - "Data Lakehouse"
+      - "Streaming"
+      - "Data Governance"
+    subdomains:
+      - "Analytics"
+      - "Data Mesh"
+      - "Real-time Analytics"
