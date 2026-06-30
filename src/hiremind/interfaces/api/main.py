@@ -9,6 +9,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent.absolute()))
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
+from fastapi.responses import RedirectResponse
 from prometheus_fastapi_instrumentator import Instrumentator
 
 from hiremind.infrastructure import logger
@@ -43,6 +44,12 @@ app.include_router(jobs.router)
 app.include_router(ranking.router)
 app.include_router(candidates.router)
 app.include_router(reasoning.router)
+
+
+@app.get("/", include_in_schema=False)
+async def root():
+    """Redirect root to API documentation."""
+    return RedirectResponse(url="/docs")
 
 
 @app.on_event("startup")
