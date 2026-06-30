@@ -1,0 +1,47 @@
+{
+  "required": {
+    "ai engineer - research & applied ml": 1.0,
+    "full-time | hybrid / remote | early-stage startup / research lab": 1.0,
+    "about the role": 1.0,
+    "key responsibilities": 1.0,
+    "required qualifications": 1.0,
+    "PyTorch and TensorFlow - hands-on experience with deep learning frameworks": 1.0,
+    "including cnns, lstms, transformers, and multi-modal architectures": 1.0,
+    "RAG systems or LLM-based applications - demonstrated experience building": 1.0,
+    "using LangChain, huggingface, or equivalent tooling": 1.0,
+    "GCP (vertex ai, bigquery) - experience with cloud platforms, preferably": 1.0,
+    "including model training, deployment, and monitoring": 1.0,
+    "strong foundation in data structures, algorithms, and ml fundamentals": 1.0,
+    "proven track record of shipping working ai products - not just notebooks": 1.0
+  },
+  "preferred": {
+    "explainable ai (shap / lime) - prior work with": 0.5,
+    "for clinical, financial, or regulatory compliance use cases": 0.5,
+    "patent filing or active ip development experience": 0.5,
+    "tech stack we use (familiarity expected)": 0.5,
+    "languages": 0.5,
+    "Python · c/c++ · javascript · typescript · SQL": 0.5,
+    "ml / ai": 0.5,
+    "cloud & devops": 0.5,
+    "GCP (vertex ai · bigquery · cloud functions) · docker · CI/CD · git · mlops": 0.5,
+    "web & databases": 0.5,
+    "fastapi · flask · react · next.js · postgreSQL · mongodb · firebase · vector dbs": 0.5,
+    "blockchain": 0.5,
+    "solidity · ethereum · hardhat · web3.js": 0.5,
+    "what we value": 0.5,
+    "profile we're excited about": 0.5,
+    "compensation & perks": 0.5,
+    "equity stake available for co-founder-track candidates": 0.5,
+    "direct access to founding team and real ownership of ai product decisions": 0.5,
+    "letter of recommendation and research credit for students still in final year": 0.5
+  },
+  "negative": [
+    "notebooks",
+    "know but here"
+  ],
+  "experience": {
+    "min_years": null,
+    "max_years": null,
+    "preferred_years": null
+  }
+}

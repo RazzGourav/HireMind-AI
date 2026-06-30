@@ -1,0 +1,313 @@
+{
+  "required": [
+    {
+      "id": "REQ_34AA7470",
+      "name": "ai engineer - research & applied ml",
+      "category": "required",
+      "weight": 1.0,
+      "required": true,
+      "aliases": [],
+      "evidence": "ai engineer - research & applied ml"
+    },
+    {
+      "id": "REQ_271E07A0",
+      "name": "full-time | hybrid / remote | early-stage startup / research lab",
+      "category": "required",
+      "weight": 1.0,
+      "required": true,
+      "aliases": [],
+      "evidence": "full-time | hybrid / remote | early-stage startup / research lab"
+    },
+    {
+      "id": "REQ_A21051AE",
+      "name": "about the role",
+      "category": "required",
+      "weight": 1.0,
+      "required": true,
+      "aliases": [],
+      "evidence": "about the role"
+    },
+    {
+      "id": "REQ_767CB264",
+      "name": "key responsibilities",
+      "category": "required",
+      "weight": 1.0,
+      "required": true,
+      "aliases": [],
+      "evidence": "key responsibilities"
+    },
+    {
+      "id": "REQ_C4D41911",
+      "name": "required qualifications",
+      "category": "required",
+      "weight": 1.0,
+      "required": true,
+      "aliases": [],
+      "evidence": "required qualifications"
+    },
+    {
+      "id": "REQ_13075CFE",
+      "name": "PyTorch and TensorFlow - hands-on experience with deep learning frameworks",
+      "category": "required",
+      "weight": 1.0,
+      "required": true,
+      "aliases": [],
+      "evidence": "PyTorch and TensorFlow - hands-on experience with deep learning frameworks:"
+    },
+    {
+      "id": "REQ_C328A912",
+      "name": "including cnns, lstms, transformers, and multi-modal architectures",
+      "category": "required",
+      "weight": 1.0,
+      "required": true,
+      "aliases": [],
+      "evidence": "including cnns, lstms, transformers, and multi-modal architectures."
+    },
+    {
+      "id": "REQ_6A1B071A",
+      "name": "RAG systems or LLM-based applications - demonstrated experience building",
+      "category": "required",
+      "weight": 1.0,
+      "required": true,
+      "aliases": [],
+      "evidence": "RAG systems or LLM-based applications - demonstrated experience building"
+    },
+    {
+      "id": "REQ_FCEB95DF",
+      "name": "using LangChain, huggingface, or equivalent tooling",
+      "category": "required",
+      "weight": 1.0,
+      "required": true,
+      "aliases": [],
+      "evidence": "using LangChain, huggingface, or equivalent tooling."
+    },
+    {
+      "id": "REQ_9A0542CE",
+      "name": "GCP (vertex ai, bigquery) - experience with cloud platforms, preferably",
+      "category": "required",
+      "weight": 1.0,
+      "required": true,
+      "aliases": [],
+      "evidence": "GCP (vertex ai, bigquery) - experience with cloud platforms, preferably"
+    },
+    {
+      "id": "REQ_9FBA0F4D",
+      "name": "including model training, deployment, and monitoring",
+      "category": "required",
+      "weight": 1.0,
+      "required": true,
+      "aliases": [],
+      "evidence": "including model training, deployment, and monitoring."
+    },
+    {
+      "id": "REQ_5127CA2F",
+      "name": "strong foundation in data structures, algorithms, and ml fundamentals",
+      "category": "required",
+      "weight": 1.0,
+      "required": true,
+      "aliases": [],
+      "evidence": "strong foundation in data structures, algorithms, and ml fundamentals."
+    },
+    {
+      "id": "REQ_D8664840",
+      "name": "proven track record of shipping working ai products - not just notebooks",
+      "category": "required",
+      "weight": 1.0,
+      "required": true,
+      "aliases": [],
+      "evidence": "proven track record of shipping working ai products - not just notebooks."
+    }
+  ],
+  "preferred": [
+    {
+      "id": "REQ_CF0169F1",
+      "name": "explainable ai (shap / lime) - prior work with",
+      "category": "preferred",
+      "weight": 0.5,
+      "required": false,
+      "aliases": [],
+      "evidence": "explainable ai (shap / lime) - prior work with"
+    },
+    {
+      "id": "REQ_A3CAC271",
+      "name": "for clinical, financial, or regulatory compliance use cases",
+      "category": "preferred",
+      "weight": 0.5,
+      "required": false,
+      "aliases": [],
+      "evidence": "for clinical, financial, or regulatory compliance use cases."
+    },
+    {
+      "id": "REQ_1F23DE8B",
+      "name": "patent filing or active ip development experience",
+      "category": "preferred",
+      "weight": 0.5,
+      "required": false,
+      "aliases": [],
+      "evidence": "patent filing or active ip development experience."
+    },
+    {
+      "id": "REQ_808777DD",
+      "name": "tech stack we use (familiarity expected)",
+      "category": "preferred",
+      "weight": 0.5,
+      "required": false,
+      "aliases": [],
+      "evidence": "tech stack we use (familiarity expected)"
+    },
+    {
+      "id": "REQ_5A6B6589",
+      "name": "languages",
+      "category": "preferred",
+      "weight": 0.5,
+      "required": false,
+      "aliases": [],
+      "evidence": "languages"
+    },
+    {
+      "id": "REQ_8B14CFBE",
+      "name": "Python · c/c++ · javascript · typescript · SQL",
+      "category": "preferred",
+      "weight": 0.5,
+      "required": false,
+      "aliases": [],
+      "evidence": "Python · c/c++ · javascript · typescript · SQL"
+    },
+    {
+      "id": "REQ_7305231A",
+      "name": "ml / ai",
+      "category": "preferred",
+      "weight": 0.5,
+      "required": false,
+      "aliases": [],
+      "evidence": "ml / ai"
+    },
+    {
+      "id": "REQ_BEBB1E77",
+      "name": "cloud & devops",
+      "category": "preferred",
+      "weight": 0.5,
+      "required": false,
+      "aliases": [],
+      "evidence": "cloud & devops"
+    },
+    {
+      "id": "REQ_031CB519",
+      "name": "GCP (vertex ai · bigquery · cloud functions) · docker · CI/CD · git · mlops",
+      "category": "preferred",
+      "weight": 0.5,
+      "required": false,
+      "aliases": [],
+      "evidence": "GCP (vertex ai · bigquery · cloud functions) · docker · CI/CD · git · mlops"
+    },
+    {
+      "id": "REQ_00B52697",
+      "name": "web & databases",
+      "category": "preferred",
+      "weight": 0.5,
+      "required": false,
+      "aliases": [],
+      "evidence": "web & databases"
+    },
+    {
+      "id": "REQ_9FFFD24A",
+      "name": "fastapi · flask · react · next.js · postgreSQL · mongodb · firebase · vector dbs",
+      "category": "preferred",
+      "weight": 0.5,
+      "required": false,
+      "aliases": [],
+      "evidence": "fastapi · flask · react · next.js · postgreSQL · mongodb · firebase · vector dbs"
+    },
+    {
+      "id": "REQ_6C753CFB",
+      "name": "blockchain",
+      "category": "preferred",
+      "weight": 0.5,
+      "required": false,
+      "aliases": [],
+      "evidence": "blockchain"
+    },
+    {
+      "id": "REQ_38A693E6",
+      "name": "solidity · ethereum · hardhat · web3.js",
+      "category": "preferred",
+      "weight": 0.5,
+      "required": false,
+      "aliases": [],
+      "evidence": "solidity · ethereum · hardhat · web3.js"
+    },
+    {
+      "id": "REQ_9E001FCD",
+      "name": "what we value",
+      "category": "preferred",
+      "weight": 0.5,
+      "required": false,
+      "aliases": [],
+      "evidence": "what we value"
+    },
+    {
+      "id": "REQ_AA5B64B6",
+      "name": "profile we're excited about",
+      "category": "preferred",
+      "weight": 0.5,
+      "required": false,
+      "aliases": [],
+      "evidence": "profile we're excited about"
+    },
+    {
+      "id": "REQ_B5B61BB2",
+      "name": "compensation & perks",
+      "category": "preferred",
+      "weight": 0.5,
+      "required": false,
+      "aliases": [],
+      "evidence": "compensation & perks"
+    },
+    {
+      "id": "REQ_D02563F0",
+      "name": "equity stake available for co-founder-track candidates",
+      "category": "preferred",
+      "weight": 0.5,
+      "required": false,
+      "aliases": [],
+      "evidence": "equity stake available for co-founder-track candidates."
+    },
+    {
+      "id": "REQ_33CE9CD2",
+      "name": "direct access to founding team and real ownership of ai product decisions",
+      "category": "preferred",
+      "weight": 0.5,
+      "required": false,
+      "aliases": [],
+      "evidence": "direct access to founding team and real ownership of ai product decisions."
+    },
+    {
+      "id": "REQ_ED8BD5BE",
+      "name": "letter of recommendation and research credit for students still in final year",
+      "category": "preferred",
+      "weight": 0.5,
+      "required": false,
+      "aliases": [],
+      "evidence": "letter of recommendation and research credit for students still in final year."
+    }
+  ],
+  "negative": [
+    {
+      "id": "REQ_349FB112",
+      "name": "notebooks",
+      "reason": "Inline negative signal",
+      "evidence": "not just notebooks"
+    },
+    {
+      "id": "REQ_DC2CD2BA",
+      "name": "know but here",
+      "reason": "Inline negative signal",
+      "evidence": "don't know but here"
+    }
+  ],
+  "experience": {
+    "min_years": null,
+    "max_years": null,
+    "preferred_years": null
+  }
+}
