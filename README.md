@@ -1,3 +1,12 @@
+---
+title: HireMind AI
+emoji: 🧠
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+pinned: false
+---
+
 # HireMind AI — Enterprise Production Grade
 
 **HireMind AI** is a production-ready, highly optimized Candidate Intelligence Platform designed for enterprise-scale deployment. It utilizes Hybrid Semantic Retrieval (FAISS + Ontology Graph) combined with a deterministic Explainability Engine to eliminate black-box AI hiring decisions.
