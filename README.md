@@ -24,18 +24,18 @@ graph TD
 ### Container Diagram
 ```mermaid
 graph TD
-    UI[Vite + React SPA] -->|HTTPS / REST| API[FastAPI + Uvicorn]
-    
+    UI["Vite + React SPA"] -->|"HTTPS / REST"| API["FastAPI + Uvicorn"]
+
     subgraph "Backend Services"
-        API --> RS[Retrieval Service]
-        API --> RankS[Ranking Service]
-        API --> ExpS[Explainability Engine]
-        API --> Health[/health & /metrics]
+        API --> RS["Retrieval Service"]
+        API --> RankS["Ranking Engine"]
+        API --> ExpS["Explainability Engine"]
+        API --> Monitor["Health & Metrics API"]
     end
-    
-    RS --> FAISS[(FAISS Dense Vectors)]
-    RS --> Graph[(Technology Ontology Graph)]
-    RankS --> Models[Rule-based Fusion Models]
+
+    RS --> FAISS[("FAISS Index")]
+    RS --> Graph[("Technology Ontology Graph")]
+    RankS --> Models["Hybrid Ranking Models"]
 ```
 
 ### Request Lifecycle (Sequence Diagram)
