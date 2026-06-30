@@ -18,7 +18,7 @@ export default function CandidateSearch() {
     setSearchInfo('');
 
     try {
-      const copilotResp = await axios.post('http://localhost:8000/api/v1/copilot/query', {
+      const copilotResp = await axios.post((import.meta.env.VITE_API_URL || "http://localhost:8000") + '/api/v1/copilot/query', {
         query: query
       });
 
@@ -27,7 +27,7 @@ export default function CandidateSearch() {
 
       if (matchedIds.length > 0) {
         const profilePromises = matchedIds.map(
-          (id: string) => axios.get(`http://localhost:8000/api/v1/candidate/${id}`).catch(() => null)
+          (id: string) => axios.get(`${import.meta.env.VITE_API_URL || "http://localhost:8000"}/api/v1/candidate/${id}`).catch(() => null)
         );
         const profileResults = await Promise.all(profilePromises);
         const validResults = profileResults

@@ -18,7 +18,7 @@ export default function CandidateProfile() {
 
   const fetchCandidate = async () => {
     try {
-      const res = await axios.get(`http://localhost:8000/api/v1/candidate/${id}`);
+      const res = await axios.get(`${import.meta.env.VITE_API_URL || "http://localhost:8000"}/api/v1/candidate/${id}`);
       setCandidate(res.data);
     } catch (err) {
       console.error(err);
@@ -36,7 +36,7 @@ export default function CandidateProfile() {
     setEnrichLoading(true);
     try {
       // API call to the new enrichment endpoint
-      await axios.post(`http://localhost:8000/api/v1/candidate/${id}/enrich`, { text: enrichText });
+      await axios.post(`${import.meta.env.VITE_API_URL || "http://localhost:8000"}/api/v1/candidate/${id}/enrich`, { text: enrichText });
       setEnrichOpen(false);
       setEnrichText('');
       // Refresh candidate data to see updated scores/skills if applicable

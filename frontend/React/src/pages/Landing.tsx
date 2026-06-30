@@ -141,7 +141,7 @@ export default function Landing() {
       {/* Footer */}
       <footer className="relative z-10 border-t border-white/5 py-8 text-center text-sm text-text-muted mt-24">
         <div className="flex items-center justify-center gap-6 mb-4">
-          <a href="http://localhost:8000/docs" className="hover:text-text transition-colors">API Docs (Swagger)</a>
+          <a href={(import.meta.env.VITE_API_URL || "http://localhost:8000") + "/docs"} className="hover:text-text transition-colors">API Docs (Swagger)</a>
         </div>
         <p>© 2026 Redrob SaaS MVP</p>
       </footer>

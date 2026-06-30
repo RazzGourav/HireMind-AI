@@ -27,7 +27,7 @@ export default function DashboardHome() {
       const formData = new FormData();
       formData.append("file", file);
       
-      const response = await axios.post('http://localhost:8000/api/v1/job/parse', formData);
+      const response = await axios.post((import.meta.env.VITE_API_URL || "http://localhost:8000") + '/api/v1/job/parse', formData);
       setResult(response.data);
       await fetchTopCandidates(response.data);
     } catch (err) {
@@ -41,7 +41,7 @@ export default function DashboardHome() {
   const fetchTopCandidates = async (parsedResult: any) => {
     setRankingLoading(true);
     try {
-      const response = await axios.post('http://localhost:8000/api/v1/ranking/run', {
+      const response = await axios.post((import.meta.env.VITE_API_URL || "http://localhost:8000") + '/api/v1/ranking/run', {
         jd_reqs: parsedResult,
         params: {
           top_k: 20,

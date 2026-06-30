@@ -1,7 +1,7 @@
 {
   "required": [
     {
-      "id": "REQ_34AA7470",
+      "id": "REQ_4BC6CE2F",
       "name": "ai engineer - research & applied ml",
       "category": "required",
       "weight": 1.0,
@@ -10,7 +10,7 @@
       "evidence": "ai engineer - research & applied ml"
     },
     {
-      "id": "REQ_271E07A0",
+      "id": "REQ_C62E6BB7",
       "name": "full-time | hybrid / remote | early-stage startup / research lab",
       "category": "required",
       "weight": 1.0,
@@ -19,7 +19,7 @@
       "evidence": "full-time | hybrid / remote | early-stage startup / research lab"
     },
     {
-      "id": "REQ_A21051AE",
+      "id": "REQ_5E79B7CE",
       "name": "about the role",
       "category": "required",
       "weight": 1.0,
@@ -28,7 +28,7 @@
       "evidence": "about the role"
     },
     {
-      "id": "REQ_767CB264",
+      "id": "REQ_0372040F",
       "name": "key responsibilities",
       "category": "required",
       "weight": 1.0,
@@ -37,7 +37,7 @@
       "evidence": "key responsibilities"
     },
     {
-      "id": "REQ_C4D41911",
+      "id": "REQ_DAB4EBE8",
       "name": "required qualifications",
       "category": "required",
       "weight": 1.0,
@@ -46,7 +46,7 @@
       "evidence": "required qualifications"
     },
     {
-      "id": "REQ_13075CFE",
+      "id": "REQ_4DCF3034",
       "name": "PyTorch and TensorFlow - hands-on experience with deep learning frameworks",
       "category": "required",
       "weight": 1.0,
@@ -55,7 +55,7 @@
       "evidence": "PyTorch and TensorFlow - hands-on experience with deep learning frameworks:"
     },
     {
-      "id": "REQ_C328A912",
+      "id": "REQ_27C14F9C",
       "name": "including cnns, lstms, transformers, and multi-modal architectures",
       "category": "required",
       "weight": 1.0,
@@ -64,7 +64,7 @@
       "evidence": "including cnns, lstms, transformers, and multi-modal architectures."
     },
     {
-      "id": "REQ_6A1B071A",
+      "id": "REQ_CB1EBE16",
       "name": "RAG systems or LLM-based applications - demonstrated experience building",
       "category": "required",
       "weight": 1.0,
@@ -73,7 +73,7 @@
       "evidence": "RAG systems or LLM-based applications - demonstrated experience building"
     },
     {
-      "id": "REQ_FCEB95DF",
+      "id": "REQ_F9EB3D33",
       "name": "using LangChain, huggingface, or equivalent tooling",
       "category": "required",
       "weight": 1.0,
@@ -82,7 +82,7 @@
       "evidence": "using LangChain, huggingface, or equivalent tooling."
     },
     {
-      "id": "REQ_9A0542CE",
+      "id": "REQ_7D3BEA5F",
       "name": "GCP (vertex ai, bigquery) - experience with cloud platforms, preferably",
       "category": "required",
       "weight": 1.0,
@@ -91,7 +91,7 @@
       "evidence": "GCP (vertex ai, bigquery) - experience with cloud platforms, preferably"
     },
     {
-      "id": "REQ_9FBA0F4D",
+      "id": "REQ_9DDA4CBA",
       "name": "including model training, deployment, and monitoring",
       "category": "required",
       "weight": 1.0,
@@ -100,7 +100,7 @@
       "evidence": "including model training, deployment, and monitoring."
     },
     {
-      "id": "REQ_5127CA2F",
+      "id": "REQ_E5C102D7",
       "name": "strong foundation in data structures, algorithms, and ml fundamentals",
       "category": "required",
       "weight": 1.0,
@@ -109,7 +109,7 @@
       "evidence": "strong foundation in data structures, algorithms, and ml fundamentals."
     },
     {
-      "id": "REQ_D8664840",
+      "id": "REQ_596BD1BD",
       "name": "proven track record of shipping working ai products - not just notebooks",
       "category": "required",
       "weight": 1.0,
@@ -120,7 +120,7 @@
   ],
   "preferred": [
     {
-      "id": "REQ_CF0169F1",
+      "id": "REQ_B2623635",
       "name": "explainable ai (shap / lime) - prior work with",
       "category": "preferred",
       "weight": 0.5,
@@ -129,7 +129,7 @@
       "evidence": "explainable ai (shap / lime) - prior work with"
     },
     {
-      "id": "REQ_A3CAC271",
+      "id": "REQ_3FCA035F",
       "name": "for clinical, financial, or regulatory compliance use cases",
       "category": "preferred",
       "weight": 0.5,
@@ -138,7 +138,7 @@
       "evidence": "for clinical, financial, or regulatory compliance use cases."
     },
     {
-      "id": "REQ_1F23DE8B",
+      "id": "REQ_65BFA882",
       "name": "patent filing or active ip development experience",
       "category": "preferred",
       "weight": 0.5,
@@ -147,7 +147,7 @@
       "evidence": "patent filing or active ip development experience."
     },
     {
-      "id": "REQ_808777DD",
+      "id": "REQ_4BD6CA22",
       "name": "tech stack we use (familiarity expected)",
       "category": "preferred",
       "weight": 0.5,
@@ -156,7 +156,7 @@
       "evidence": "tech stack we use (familiarity expected)"
     },
     {
-      "id": "REQ_5A6B6589",
+      "id": "REQ_56241C1C",
       "name": "languages",
       "category": "preferred",
       "weight": 0.5,
@@ -165,7 +165,7 @@
       "evidence": "languages"
     },
     {
-      "id": "REQ_8B14CFBE",
+      "id": "REQ_E58844EB",
       "name": "Python · c/c++ · javascript · typescript · SQL",
       "category": "preferred",
       "weight": 0.5,
@@ -174,7 +174,7 @@
       "evidence": "Python · c/c++ · javascript · typescript · SQL"
     },
     {
-      "id": "REQ_7305231A",
+      "id": "REQ_11D92533",
       "name": "ml / ai",
       "category": "preferred",
       "weight": 0.5,
@@ -183,7 +183,7 @@
       "evidence": "ml / ai"
     },
     {
-      "id": "REQ_BEBB1E77",
+      "id": "REQ_45D398AB",
       "name": "cloud & devops",
       "category": "preferred",
       "weight": 0.5,
@@ -192,7 +192,7 @@
       "evidence": "cloud & devops"
     },
     {
-      "id": "REQ_031CB519",
+      "id": "REQ_6A3002BD",
       "name": "GCP (vertex ai · bigquery · cloud functions) · docker · CI/CD · git · mlops",
       "category": "preferred",
       "weight": 0.5,
@@ -201,7 +201,7 @@
       "evidence": "GCP (vertex ai · bigquery · cloud functions) · docker · CI/CD · git · mlops"
     },
     {
-      "id": "REQ_00B52697",
+      "id": "REQ_EA1F5735",
       "name": "web & databases",
       "category": "preferred",
       "weight": 0.5,
@@ -210,7 +210,7 @@
       "evidence": "web & databases"
     },
     {
-      "id": "REQ_9FFFD24A",
+      "id": "REQ_0AAD1C69",
       "name": "fastapi · flask · react · next.js · postgreSQL · mongodb · firebase · vector dbs",
       "category": "preferred",
       "weight": 0.5,
@@ -219,7 +219,7 @@
       "evidence": "fastapi · flask · react · next.js · postgreSQL · mongodb · firebase · vector dbs"
     },
     {
-      "id": "REQ_6C753CFB",
+      "id": "REQ_6EA0AA14",
       "name": "blockchain",
       "category": "preferred",
       "weight": 0.5,
@@ -228,7 +228,7 @@
       "evidence": "blockchain"
     },
     {
-      "id": "REQ_38A693E6",
+      "id": "REQ_15BED502",
       "name": "solidity · ethereum · hardhat · web3.js",
       "category": "preferred",
       "weight": 0.5,
@@ -237,7 +237,7 @@
       "evidence": "solidity · ethereum · hardhat · web3.js"
     },
     {
-      "id": "REQ_9E001FCD",
+      "id": "REQ_5806C45F",
       "name": "what we value",
       "category": "preferred",
       "weight": 0.5,
@@ -246,7 +246,7 @@
       "evidence": "what we value"
     },
     {
-      "id": "REQ_AA5B64B6",
+      "id": "REQ_DF828C3C",
       "name": "profile we're excited about",
       "category": "preferred",
       "weight": 0.5,
@@ -255,7 +255,7 @@
       "evidence": "profile we're excited about"
     },
     {
-      "id": "REQ_B5B61BB2",
+      "id": "REQ_46E7AAD2",
       "name": "compensation & perks",
       "category": "preferred",
       "weight": 0.5,
@@ -264,7 +264,7 @@
       "evidence": "compensation & perks"
     },
     {
-      "id": "REQ_D02563F0",
+      "id": "REQ_DB624FAB",
       "name": "equity stake available for co-founder-track candidates",
       "category": "preferred",
       "weight": 0.5,
@@ -273,7 +273,7 @@
       "evidence": "equity stake available for co-founder-track candidates."
     },
     {
-      "id": "REQ_33CE9CD2",
+      "id": "REQ_C466DA44",
       "name": "direct access to founding team and real ownership of ai product decisions",
       "category": "preferred",
       "weight": 0.5,
@@ -282,7 +282,7 @@
       "evidence": "direct access to founding team and real ownership of ai product decisions."
     },
     {
-      "id": "REQ_ED8BD5BE",
+      "id": "REQ_45BBC0A4",
       "name": "letter of recommendation and research credit for students still in final year",
       "category": "preferred",
       "weight": 0.5,
@@ -293,13 +293,13 @@
   ],
   "negative": [
     {
-      "id": "REQ_349FB112",
+      "id": "REQ_08A7DB81",
       "name": "notebooks",
       "reason": "Inline negative signal",
       "evidence": "not just notebooks"
     },
     {
-      "id": "REQ_DC2CD2BA",
+      "id": "REQ_7359C199",
       "name": "know but here",
       "reason": "Inline negative signal",
       "evidence": "don't know but here"
