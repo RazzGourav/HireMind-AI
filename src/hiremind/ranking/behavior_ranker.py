@@ -11,8 +11,8 @@ class BehaviorRanker:
         """Score candidate's behavioral activity and signals (0.0 to 1.0)."""
         signals = candidate.signals
 
-        # 1. Github activity score
-        git_score = signals.github_activity_score or 0.0
+        # 1. Github activity score (normalize 0-10+ range to 0.0-1.0)
+        git_score = min((signals.github_activity_score or 0.0) / 10.0, 1.0)
         # If they don't have github score but have a github profile, give small baseline
         if git_score <= 0.0 and getattr(signals, "has_github", False):
             git_score = 0.3
