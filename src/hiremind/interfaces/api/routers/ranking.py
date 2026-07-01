@@ -70,7 +70,7 @@ async def run_ranking_pipeline(
     start = time.perf_counter()
     ranked = ranking_service.rank_retrieved(
         retrieved=retrieved,
-        candidates=state.candidates,
+        candidate_store=state.candidates,
         features=state.candidate_features,
         requirements=parsed,
         max_notice_days=params.max_notice_days,

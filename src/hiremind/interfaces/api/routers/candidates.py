@@ -23,7 +23,7 @@ async def get_candidate_details(candidate_id: str, state: Any = Depends(get_app_
     if not candidate:
         raise HTTPException(status_code=404, detail="Candidate not found")
 
-    features = state.candidate_features.get(candidate_id, {})
+    features = next((f for f in state.candidate_features if getattr(f, "candidate_id", None) == candidate_id), {})
 
     return {
         "candidate": {
@@ -57,11 +57,11 @@ async def enrich_candidate(
         candidate.profile.summary = f"[Enriched Intelligence]: {request.text}"
 
     # 2. Add to features for explainability tracking
-    features = state.candidate_features.get(candidate_id, {})
-    if "enrichments" not in features:
-        features["enrichments"] = []
-    features["enrichments"].append(request.text)
-    state.candidate_features[candidate_id] = features
+    features = next((f for f in state.candidate_features if getattr(f, "candidate_id", None) == candidate_id), None)
+    if features:
+        if not hasattr(features, "enrichments"):
+            features.enrichments = []
+        features.enrichments.append(request.text)
 
     # In a full production system, we would also:
     # 1. Recalculate embedding using `DenseEmbeddingEncoder`
