@@ -29,6 +29,10 @@ class LazyCandidateStore:
     def __len__(self) -> int:
         return len(self._payloads)
 
+    def __iter__(self):
+        for candidate_id in self._payloads:
+            yield self.get(candidate_id)
+
 
 class FeatureCache:
     def __init__(self, cache_dir: str | Path = "feature_cache") -> None:

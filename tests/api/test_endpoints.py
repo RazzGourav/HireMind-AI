@@ -18,4 +18,4 @@ def test_copilot_endpoint_mock():
     assert response.status_code == 200
     data = response.json()
     assert "answer" in data
-    assert "You asked: 'test query'" in data["answer"]
+    assert "I couldn't find strong matches" in data["answer"]
